@@ -1,6 +1,8 @@
 package com.wu.springboot.demo.web.rest.controller;
 
 import com.wu.springboot.demo.web.rest.pojo.dto.UserInsertDto;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -11,6 +13,7 @@ import java.util.Date;
  * @author wusq
  * @date 2019/11/28
  */
+@Api(description = "用户")
 @RestController
 @RequestMapping("users")
 public class UserController {
@@ -20,6 +23,7 @@ public class UserController {
      * @param id
      * @return
      */
+    @ApiOperation("根据用户ID获取用户")
     @GetMapping("{id}")
     public UserInsertDto get(@PathVariable int id){
         UserInsertDto user = new UserInsertDto();
@@ -29,6 +33,7 @@ public class UserController {
         return user;
     }
 
+    @ApiOperation("保存用户")
     @PostMapping()
     public String insert(@RequestBody @Valid UserInsertDto dto){
         System.out.println(dto.getBirthday());
