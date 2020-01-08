@@ -18,6 +18,7 @@
     <modules>
         <module>mybatis-base</module>
         <module>mybatis-plus</module>
+        <module>mybatis-plus-dynamic-datasource</module>
     </modules>
 
 </project>
