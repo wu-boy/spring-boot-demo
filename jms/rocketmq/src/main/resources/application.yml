@@ -1,0 +1,9 @@
+rocketmq:
+  name-server: ip:port;ip:port
+  producer:
+    group: producer_group_test
+global-config:
+  topic-string: topic_string
+  topic-user: topic_user
+  string-consumer-group: string_consumer_group
+  user-consumer-group: user_consumer_group
