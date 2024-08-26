@@ -33,7 +33,7 @@
         <mybatis.starter.version>2.1.0</mybatis.starter.version>
         <postgresql.version>42.2.5</postgresql.version>
         <rocketmq.start.version>2.0.4</rocketmq.start.version>
-        <swagger.version>2.9.2</swagger.version>
+        <swagger.version>2.10.0</swagger.version>
     </properties>
 
     <dependencies>
